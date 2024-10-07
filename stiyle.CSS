@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{   
+  background-color: #192f3a; 
+  background-image: linear-gradient(135deg, #041822 0%, #0a5b91 100%); /* gradient background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+input {
+  background-color: #011018; 
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(21, 29, 61, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 400px;
+}
+input::placeholder {
+  color: #ccc; 
+}
+input:focus {
+  outline: none;
+}
+.card {
+  background-color: #455a64; /* primary color */
+  background-image: linear-gradient(135deg, #455a64 0%, #3b4f5c 100%); /* gradient background */
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  max-width: 800px;
+  transition: transform 0.3s, box-shadow 0.3s; /* added transition effect */
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(154, 160, 185, 0.1), 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+.avatar {
+  border: 10px solid #455a64; /* primary color */
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.user-info {
+  color: #fff; /* secondary color */
+  margin-left: 2rem;
+}
+.user-info h2 {
+  margin-top: 0;
+}
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+}
+.user-info ul li {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.repo {
+  background-color: #607d8b; /* accent color */
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff; /* secondary color */
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s; /* added transition effect */
+}
+.repo:hover {
+  background-color: #546e7a; /* accent color hover */
+}
